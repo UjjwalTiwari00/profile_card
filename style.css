@@ -1,0 +1,105 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(154, 167, 167);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.conatainer{
+    max-width: 390px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 20px;
+    padding: 30px;
+    background-color: rgb(250, 250, 253);
+    box-shadow: 0px 5px 10px rgb(1, 32, 32);
+    position: relative;
+    z-index: 3;
+}
+.conatainer::before{
+    content: "";
+    position: absolute;
+    height: 150px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background-color: #4070f4;
+    opacity: 0.9;
+    z-index:-1;
+    border-radius: 20px 20px 0px 0px ;
+}
+.image{
+    background-color: rgb(222, 115, 33);
+    border: 4px solid rgb(74, 74, 248);
+    display: flex;
+    height:150px;
+    width: 150px;
+    border-radius: 50%;
+    
+    
+}
+.image1{
+    border: 4px solid rgb(93, 241, 160);
+    height:100%;
+    width: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    
+}
+.conatainer .text_area{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.text_area .text1{
+    font-size: 20px;
+    font-weight: 400;
+}
+.text_area .text2{
+    font-size: 20px;
+    font-weight: 200;
+}
+.conatainer .media_buttons{
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.media_buttons .link{
+    border-radius: 50%;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    height: 50px;
+    width: 50px;
+   margin: 0px 10px;
+    /* background-color: rgb(250, 249, 255); */
+    color: white;
+    text-decoration: none;
+}
+.conatainer .buttons{
+   display: flex;
+   align-items: center;
+   margin-top: 20px;
+}
+.buttons .button1{
+    padding: 10px;
+    margin: 0px 10px;
+    border-radius: 20px;
+    border: none;
+    background-color: hsl(235, 100%, 79%);
+    color: rgb(164, 3, 3);
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.buttons .button1:hover{
+    background-color: cornflowerblue;
+}
